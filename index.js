@@ -37,10 +37,17 @@ function svgToImage (svg, opt, cb) {
   } catch (e) {
     return bail(e)
   }
-  
+
   var url = DOMURL.createObjectURL(blob)
   loadImage(url, opt, function (err, img) {
     DOMURL.revokeObjectURL(url)
+    if (err) {
+      // try again for Safari 8.0, using simple encodeURIComponent
+      // this will fail with DOM content but at least it works with SVG
+      var url2 = 'data:image/svg+xml,' + encodeURIComponent(svg.join(''))
+      return loadImage(url2, opt, cb)
+    }
+
     cb(err, img)
   })
 
