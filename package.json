@@ -1,0 +1,49 @@
+{
+  "name": "svg-to-image",
+  "version": "1.0.0",
+  "description": "convert SVG text to a Image that can be drawn in canvas",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "img": "^1.0.0"
+  },
+  "devDependencies": {
+    "2d-context": "^1.3.0",
+    "budo": "^5.0.0-beta4",
+    "faucet": "0.0.1",
+    "garnish": "^3.2.0",
+    "lorem-ipsum": "^1.0.3",
+    "tape": "^4.2.0"
+  },
+  "scripts": {
+    "start": "budo test.js --live | garnish",
+    "test": "node test-node.js | faucet"
+  },
+  "keywords": [
+    "convert",
+    "svg",
+    "to",
+    "canvas",
+    "image",
+    "png",
+    "blob",
+    "file",
+    "url",
+    "dom",
+    "raster",
+    "rasterize"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/svg-to-image.git"
+  },
+  "homepage": "https://github.com/Jam3/svg-to-image",
+  "bugs": {
+    "url": "https://github.com/Jam3/svg-to-image/issues"
+  }
+}
