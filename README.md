@@ -15,9 +15,12 @@ npm install svg-to-image --save
 A common use case for this is rendering SVG to a 2D or WebGL canvas.
 
 ```js
+var svgToImage = require('svg-to-image')
+var getContext = require('get-canvas-context')
+
 // set up a new Canvas2D
-var context = require('2d-context')({
-  width: 200, height: 200 
+var context = getContext('2d', {
+  width: 200, height: 200
 })
 
 var data = [
