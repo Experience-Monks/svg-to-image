@@ -2,7 +2,7 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-Converts a string of SVG into an `HTMLImageElement` using `Blob` and `URL.createObjectURL`.
+Converts a string of SVG into an `HTMLImageElement` using `Blob` and `URL.createObjectURL`. Falls back to `encodeURIComponent` for unsupported browsers, such as Safari 8.0.
 
 ## Install
 
