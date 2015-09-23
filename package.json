@@ -1,6 +1,6 @@
 {
   "name": "svg-to-image",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "convert SVG text to a Image that can be drawn in canvas",
   "main": "index.js",
   "license": "MIT",
