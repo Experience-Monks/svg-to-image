@@ -1,4 +1,4 @@
-var loadImage = require('img')
+var loadImage = require('load-img')
 var noop = function () {}
 
 module.exports = svgToImage

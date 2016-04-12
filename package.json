@@ -10,7 +10,8 @@
     "url": "https://github.com/mattdesl"
   },
   "dependencies": {
-    "img": "^1.0.0"
+    "img": "^1.0.0",
+    "load-img": "^1.0.0"
   },
   "devDependencies": {
     "budo": "^5.0.0-beta4",
