@@ -10,7 +10,6 @@
     "url": "https://github.com/mattdesl"
   },
   "dependencies": {
-    "img": "^1.0.0",
     "load-img": "^1.0.0"
   },
   "devDependencies": {
